@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn and SignUp Forms</title>
+  </head>
+  <body>
+    <h1>User Authentication</h1>
+
+    <!-- SignIn Form -->
+    <form action="/signin" method="post">
+      <h2>Sign In</h2>
+      <label for="signinUsername">Username:</label>
+      <input type="text" id="signinUsername" name="signinUsername" required />
+      <br />
+      <label for="signinPassword">Password:</label>
+      <input
+        type="password"
+        id="signinPassword"
+        name="signinPassword"
+        required
+      />
+      <br />
+      <button type="submit">Sign In</button>
+    </form>
+
+    <!-- SignUp Form -->
+    <form action="/signup" method="post">
+      <h2>Sign Up</h2>
+      <label for="signupUsername">Username:</label>
+      <input type="text" id="signupUsername" name="signupUsername" required />
+      <br />
+      <label for="signupPassword">Password:</label>
+      <input
+        type="password"
+        id="signupPassword"
+        name="signupPassword"
+        required
+      />
+      <br />
+      <button type="submit">Sign Up</button>
+    </form>
+  </body>
+</html>
